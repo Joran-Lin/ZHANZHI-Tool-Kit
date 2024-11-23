@@ -6,3 +6,4 @@ logging
 tqdm
 pikepdf
 streamlit
+openpyxl
