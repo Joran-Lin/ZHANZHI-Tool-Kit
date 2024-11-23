@@ -5,3 +5,4 @@ PyPDF2
 logging
 tqdm
 pikepdf
+streamlit
