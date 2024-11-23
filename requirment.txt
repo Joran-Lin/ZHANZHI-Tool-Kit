@@ -1,0 +1,8 @@
+pandas
+requests
+curl_cffi
+PyPDF2
+logging
+tqdm
+pikepdf
+shutil
