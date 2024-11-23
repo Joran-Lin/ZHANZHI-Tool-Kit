@@ -22,7 +22,7 @@ DOWNLOAD_PATH = os.path.dirname(os.path.abspath(__file__))+os.sep+"Downloads"
 if not os.path.exists(DOWNLOAD_PATH):
     os.makedirs(DOWNLOAD_PATH)
 else:
-    shutil.move(DOWNLOAD_PATH)
+    shutil.remtree(DOWNLOAD_PATH)
     os.makedirs(DOWNLOAD_PATH)
 
 def download_files(df, title_field, url_field):
