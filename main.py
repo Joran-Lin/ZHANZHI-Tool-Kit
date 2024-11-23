@@ -189,7 +189,7 @@ uploaded_file = st.file_uploader("上传 Excel 文件", type=["xlsx", "xls"])
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file).fillna('')
     st.write("上传的 Excel 文件内容：")
-    st.write(df)
+    st.write(df.head)
 
     # 输入字段
     title_field = st.text_input("标题字段")
@@ -199,12 +199,12 @@ if uploaded_file is not None:
     if st.button("通道1下载"):
         df = download_files(df, title_field, url_field)
         st.write("下载完成")
-        st.write(df)
+        st.write(df.head)
 
     if st.button("通道2下载"):
         df = download_files2(df, title_field, url_field)
         st.write("下载完成")
-        st.write(df)
+        st.write(df.head)
 
     # 重命名模块
     st.header("重命名模块")
